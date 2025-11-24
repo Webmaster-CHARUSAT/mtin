@@ -30,7 +30,122 @@
 		===[ Default Style ]===
 ======================================*/
 	/* Variables */
-	
+	/* Section subtitle */
+.section-subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Core testimonial card */
+.testimonial-slider .testimonial-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px 28px 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: left;
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Quote icon */
+.testimonial-card .quote-icon {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 28px;
+    opacity: 0.12;
+}
+
+.testimonial-card .quote-icon i {
+    color: #000;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Rating */
+.rating-box {
+    margin: 5px 0 5px;
+}
+
+.rating-box li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.rating-box li i {
+    color: #f2b01e;
+    font-size: 16px;
+}
+
+/* User info */
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.testimonial-user img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+}
+
+.testimonial-user h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.testimonial-user span {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Owl dots alignment */
+.testimonial-slider .owl-dots {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.testimonial-slider .owl-dot span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    margin: 3px;
+}
+
+.testimonial-slider .owl-dot.active span {
+    background: #007bff; /* adjust to theme color */
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .testimonial-slider .testimonial-card {
+        padding: 22px 18px 18px;
+        margin: 0 10px;
+    }
+    .testimonial-text {
+        font-size: 14px;
+    }
+}
+
+
 	body {
 	    font-family: "Open Sans", sans-serif;
 	    overflow-x: hidden;

@@ -119,6 +119,121 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
 }
+/* Section subtitle */
+.section-subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Core testimonial card */
+.testimonial-slider .testimonial-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px 28px 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: left;
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Quote icon */
+.testimonial-card .quote-icon {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 28px;
+    opacity: 0.12;
+}
+
+.testimonial-card .quote-icon i {
+    color: #000;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Rating */
+.rating-box {
+    margin: 5px 0 5px;
+}
+
+.rating-box li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.rating-box li i {
+    color: #f2b01e;
+    font-size: 16px;
+}
+
+/* User info */
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.testimonial-user img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+}
+
+.testimonial-user h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.testimonial-user span {
+    font-size: 13px;
+    color: #777;
+}
+
+/* Owl dots alignment */
+.testimonial-slider .owl-dots {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.testimonial-slider .owl-dot span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    margin: 3px;
+}
+
+.testimonial-slider .owl-dot.active span {
+    background: #007bff; /* adjust to theme color */
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .testimonial-slider .testimonial-card {
+        padding: 22px 18px 18px;
+        margin: 0 10px;
+    }
+    .testimonial-text {
+        font-size: 14px;
+    }
+}
+
 	</style>
 </head>
 
@@ -823,125 +938,110 @@
 	</section>
 </section>
 	<!-- ./ End Information Area section -->
+<div class="home_version_03">
+    <!-- Major Recruiters Area section -->
+    <section class="stu-parent-say-area-1">
+        <div class="overlay-bg">
+            <div class="container">
+                
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-sm-12 section-header-box">
+                        <div class="section-header">
+                            <h2>Major Recruiters</h2>
+                        </div>
+                    </div>
+                </div>
 
-	<div class="home_version_03">
-		<!-- Student Parent Say Area section -->
-		<section class="stu-parent-say-area-1">
-			<div class="overlay-bg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 section-header-box">
-							<div class="section-header">
-								<h2>Major Recruiters</h2>
-							</div><!-- ends: .section-header -->
-						</div>
-					</div>
+                <!-- Carousel Row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="screen-content-box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
 
-					<div class="row">
-						<div class="screen-content-box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-							<div class="testimonial-wrapper owl-carousel" id="parent-say-02-01">
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/apollo.jpg" alt="">
-										</div>
-									</div>
-								</div>
+                            <!-- Owl Carousel -->
+                            <div class="testimonial-wrapper owl-carousel owl-theme" id="parent-say-02-01">
+                                
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/apollo.jpg" alt="Apollo">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/charusat.jpg" alt="">
-										</div>
-									</div>
-								</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/charusat.jpg" alt="CHARUSAT">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/skh.jpg" alt="">
-										</div>
-									</div>
-								</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/skh.jpg" alt="SKH">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/bhaikaka.png" alt="">
-										</div>
-									</div>
-								</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/bhaikaka.png" alt="Bhaikaka">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/rhythm.png" alt="">
-										</div>
-									</div>
-								</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/rhythm.png" alt="Rhythm">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/sterling.jpg" alt="">
-										</div>
-									</div>
-								</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/sterling.jpg" alt="Sterling">
+                                    </div>
+                                </div>
 
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/parul.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/savani.png" alt="">
-										</div>
-									</div>
-								</div>
-                               
-                                <div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/apex.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/muljibhai.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/dpin.jpg" alt="">
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="">
-										<div class="content-box">
-											<img src="images/company_logo/muniseva.jpg" alt="">
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<!--./row-->
-				</div>
-			</div>
-		</section>
-		<!-- ./ End Student Parent Say section -->
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/parul.png" alt="Parul">
+                                    </div>
+                                </div>
 
-	</div>
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/savani.png" alt="Savani">
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/apex.png" alt="Apex">
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/muljibhai.png" alt="Muljibhai">
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="content-box">
+                                        <img src="images/company_logo/dpin.jpg" alt="DPIN">
+                                    </div>
+                                </div>
+
+                             
+
+                            </div>
+                            <!-- /Owl Carousel -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ./ End Major Recruiters section -->
+</div>
+
 	<div class="home_version_02">
 		<!-- Teachers Area section -->
 		<section class="teachers-area">
@@ -1649,176 +1749,200 @@
 			</div>
 		</section>
 		<!-- ./ End Teachers Area section -->
-	
-		<!-- Student Parent Say Area section -->
-		<section class="stu-parent-say-area">
-			<div class="overlay-bg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 section-header-box">
-							<div class="section-header">
-								<h2>Testimony</h2>
-							</div><!-- ends: .section-header -->
-						</div>
-					</div>
+<!-- Student Parent Say Area section -->
+<!-- Student Parent Say Area section -->
+<section class="stu-parent-say-area">
+    <div class="overlay-bg">
+        <div class="container">
 
-					<div class="row">
-						<div class="screen-content-box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
-							<div class="testimonial-wrapper owl-carousel" id="parent-say-02">
-								<div>
-									<div class="single--item">
-										<div class="content-box">
-											<p>With a blend of brilliant faculty members, excellent infrastructure, its unique course curricula and a sound learning ambience, MTIN has successfully produced some of the finest minds around. MTIN, simply put, is an immense knowledge house and a great opportunity for the motivated.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/Mr. Robinson.png" alt=""></li>
-												<li>
-													<h3>Mr. Robinson</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+            <!-- Section Header -->
+            <div class="row">
+                <div class="col-sm-12 section-header-box text-center">
+                    <div class="section-header">
+                        <h2>Testimony</h2>
+                        <p class="section-subtitle">
+                            What our students say about their journey at MTIN.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Testimonial Slider -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="screen-content-box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
 
-							<div>
-									<div class="single--item">
-										<div class="content-box">
-											<p>One of the most difficult things to do in life is to start….and I believe that MTIN is one of the life changing platform for me. Text book can prescribe basics and knowledge for life but there is no replacement for teacher that can say….. In the journey of post graduation in nursing, I must express the value of dear Principal sir and all the faculty of MTIN for molding positively me to become successful student as well as a good teacher. I learnt many thing during this two years journey and I can already see improvement in my professional career. I feel most grateful to become a part of MTIN.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/PriyankaGurav.jpg" alt=""></li>
-												<li>
-													<h3>Ms. Priyanka Gurav</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							<div>
-									<div class="single--item">
-										<div class="content-box">
-											<p>I had fully enjoyed my student life with colleagues in an environment richly endowed with nature; I am currently in Australia to study further. Although the quality and quantity of subjects to learn daily had been massive, I was able to complete them by attaining deeper and deeper understanding together with like-minded colleagues. Because our CHARUSAT offers a class instructor system by assigning a faculty to a certain group of students from the 1st year on, we had been in an excellent educational environment for studying under the friendly supervision of those teaching faculty. MTIN made me better person and helped me develop a positive attitude my studies and to discover myself. Teachers are very caring and interested in student’s wellbeing. They make sure class is fun, educational and interactive.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/NAZNEENVOHRA.jpg" alt=""></li>
-												<li>
-													<h3>Ms. Nazneen Vohra</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							
-								<div>
-									<div class="single--item">
-										<div class="content-box">
-											<p>The hours spent in clinical lab preparing for practical exams truly made a world of difference when I started my position as a staff nurse on the intermediate care unit.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/Ms. Swati Jadav.png" alt=""></li>
-												<li>
-													<h3>Ms. Swati Jadav</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+                        <div class="testimonial-slider owl-carousel owl-theme" id="parent-say-02">
 
+                            <!-- 1 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    With a blend of brilliant faculty members, excellent infrastructure, its
+                                    unique course curricula and a sound learning ambience, MTIN has successfully
+                                    produced some of the finest minds around. MTIN, simply put, is an immense
+                                    knowledge house and a great opportunity for the motivated.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/Mr. Robinson.png" alt="Mr. Robinson">
+                                    <div>
+                                        <h3>Mr. Robinson</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
 
-								<div>
-									<div class="single--item ite">
-										<div class="content-box">
-											<p>I was challenged and learned something new with every one of my patient experiences and was given so many learning opportunities! I was introduced to a variety of nursing fields that gave me clarity for the kind of patients I wanted to work with after I graduated from MTIN.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/Ms. Dhara Patel.png" alt=""></li>
-												<li>
-													<h3>Ms. Dhara Patel</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+                            <!-- 2 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    One of the most difficult things to do in life is to start, and I believe
+                                    that MTIN is a life-changing platform for me. In my post-graduation journey,
+                                    our Principal sir and all faculty members molded me positively to become a
+                                    successful student as well as a good teacher. I can already see improvement
+                                    in my professional career and feel grateful to be a part of MTIN.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/PriyankaGurav.jpg" alt="Ms. Priyanka Gurav">
+                                    <div>
+                                        <h3>Ms. Priyanka Gurav</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
 
-								<div>
-									<div class="single--item">
-										<div class="content-box">
-											<p>I can securely say that the staff and professors truly care about each and every student in the program and work very hard to ensure that each student has every chance to succeed.</p>
-											<ul class="list-unstyled rating-box">
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-												<li><i class="fa fa-star"></i></li>
-											</ul>
-										</div>
-										<div class="images-box">
-											<ul class="list-unstyled">
-												<li><img src="images/testimony/Ms. Smruti.png" alt=""></li>
-												<li>
-													<h3>Ms. Smruti</h3>
-													<span>Student</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+                            <!-- 3 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    I enjoyed my student life with classmates in an environment richly endowed
+                                    with nature. CHARUSAT’s class instructor system and MTIN’s caring teachers
+                                    made learning interactive and meaningful. MTIN helped me become a better person
+                                    and develop a positive attitude towards my studies and career.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/NAZNEENVOHRA.jpg" alt="Ms. Nazneen Vohra">
+                                    <div>
+                                        <h3>Ms. Nazneen Vohra</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
 
-								
-							</div>
-						</div>
-					</div>
-					<!--./row-->
-				</div>
-			</div>
-		</section>
-		<!-- ./ End Student Parent Say section -->
+                            <!-- 4 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    The hours spent in the clinical lab preparing for practical exams truly
+                                    made a world of difference when I started my position as a staff nurse
+                                    on the intermediate care unit.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/Ms. Swati Jadav.png" alt="Ms. Swati Jadav">
+                                    <div>
+                                        <h3>Ms. Swati Jadav</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    I was challenged and learned something new with every patient experience.
+                                    I was introduced to a variety of nursing fields that helped me discover
+                                    the kind of patients I wanted to work with after graduating from MTIN.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/Ms. Dhara Patel.png" alt="Ms. Dhara Patel">
+                                    <div>
+                                        <h3>Ms. Dhara Patel</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6 -->
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    I can securely say that the staff and professors truly care about each
+                                    student in the program and work very hard to ensure that everyone has
+                                    every chance to succeed.
+                                </p>
+                                <ul class="list-unstyled rating-box">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <div class="testimonial-user">
+                                    <img src="images/testimony/Ms. Smruti.png" alt="Ms. Smruti">
+                                    <div>
+                                        <h3>Ms. Smruti</h3>
+                                        <span>Student</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /testimonial-slider -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 	</div>
 	<section class="video-main-area video">
@@ -1953,6 +2077,21 @@
 	</script> -->
 	<script>
 	$(document).ready(function () {
+    $('#parent-say-02').owlCarousel({
+        loop: true,
+        margin: 25,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        items: 1,        // 👈 Important: 1 card at a time for long content
+        smartSpeed: 700
+    });
+	});
+
+
+	$(document).ready(function () {
     // Show the modal on page load
     $('#modal-ann').show();
 
@@ -1962,6 +2101,22 @@
             $('#modal-ann').hide();
         }
     });
+	$(document).ready(function () {
+    $('#parent-say-02-01').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:   { items: 2 },
+            576: { items: 3 },
+            768: { items: 4 },
+            992: { items: 5 }
+        }
+    });
+});
+
 });
 </script>
 </body>
