@@ -45,6 +45,40 @@
 	<link rel="stylesheet" href="./css/responsive.css">
 	<link rel="stylesheet" href="/css/floating-btn.css">
 	<style>
+	/* Default navbar styling */
+#mainNavbar {
+    background: transparent;
+    transition: all 0.3s ease;
+
+}
+
+/* Navbar links default */
+#mainNavbar .nav > li > a {
+    color: #ffffff;   /* default white */
+    transition: color 0.3s ease;
+}
+
+/* Sticky / Scrolled state */
+.navbar-scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+/* Navbar links when scrolled */
+.navbar-scrolled .nav > li > a {
+    color: #000000 !important;  /* black text when scrolled */
+}
+
+/* Highlight active menu */
+.navbar-scrolled .nav > li.active > a {
+    color: #007bff !important;   /* optional blue active link */
+}
+
+	.header-body {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 		.btn {
 			background-color: DodgerBlue;
 			border: none;
@@ -95,6 +129,21 @@
 		body.modal-open {
 			overflow-x: hidden !important;
 		}
+.lab-images {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.lab-images .lab-img {
+    width: 32%;                /* each image takes 1/3 width */
+    height: 130px;             /* increased height */
+    object-fit: cover;         /* clean cropping */
+    border-radius: 6px;        /* clean rounded corners */
+    border: 1px solid #ccc;    /* visible border */
+}
+
 .modal-ann {
 			position: fixed; /* Ensures wrapping only around the image */
     top: 60%; /* Position from the top of the page */
@@ -235,6 +284,16 @@
 }
 
 	</style>
+	<script>
+    window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("mainNavbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    });
+</script>
 </head>
 
 <body class="home_version_02">
@@ -339,7 +398,7 @@
 	<!-- modal IQAC End-->
 	
 	<header id="header">
-		<div class="header-top">
+		<div class="header-top navbar-fixed-top">
 			<div class="container">
 			   <div class="row">
 				  <div class="col-sm-6 col-xs-12 header-top-left">
@@ -355,7 +414,7 @@
 					 <ul class="list-unstyled">
 						<li><a class="admission" href="https://admission.charusat.ac.in/Registration" id="application-form" target="_blank"><span class="blink" style="color:#fec722;">Admission Application Form</span></a></li>
 						<li ><a style="color:#fff;" href="./files/GSIRF-MTIN-2024.pdf" data-toggle="modal" ><i class="fa fa-globe top-icon"></i>GSIRF</a></li>
-						<li ><a style="color:#fff;" href="./files/MTIN CONNECT_March 25_Final.pdf"><i class="fa fa-newspaper-o top-icon"></i>Newsletter</a></li>
+						<li ><a style="color:#fff;" href="https://drive.google.com/file/d/1tDYkGb_OAWG6GaPKrnvQnhAeDpBVNvjZ/view" target="_blank"><span class="blink"><i class="fa fa-newspaper-o top-icon"></i>Newsletter</a></li>
 					 </ul>
 				  </div>
 			   </div>
@@ -363,7 +422,7 @@
 		</div>
 
 		<div class="header-body">
-			<nav class="navbar edu-navbar">
+			<nav class="navbar edu-navbar navbar-fixed-top  " id="mainNavbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -395,18 +454,8 @@
 								   </ul>
 							</li>
 							<li>
-								<a data-scroll href="">Facilities</a>
-									<ul class="list-unstyled dropdown">
-										<li><a href="../../html/Coming_Soon.html">ICT Rooms</a></li>
-										<li class="dropdown-list-box-02"><a href="../../html/Coming_Soon.html">Laboratories</a>
-										<!--<i class="fa fa-angle-right menu-icon"></i>
-										   <ul class="dropdown-list_2 list-unstyled">
-											   <li><a href="">Biological Sciences</a></li>
-											   <li><a href="">Chemical Sciences</a></li>
-										   </ul>-->
-										   </li>
-										<li><a href="../../html/Coming_Soon.html">Testing Facilities</a></li>
-									</ul> 
+								<a data-scroll href="#facilities">Facilities</a>
+									
 							 </li>
 
 							<li><a data-scroll="">Placements</a>
@@ -455,7 +504,7 @@
 
 		<!--==================Slider===================-->
 
-		<div class="rev_slider_wrapper">
+		<div class="rev_slider_wrapper" style="padding-top:0px;">
 			<div id="rev_slider_1" class="rev_slider" style="display:none">
             	<ul>
                     <li data-transition="boxfade" data-title="Slide Title" data-param1="Additional Text" data-thumb="images/MTIN_images/MTIN_1.jpg">
@@ -1154,9 +1203,9 @@
 						<div class="teacher-body">
 							<img src="images/faculty_photo/Rameshwari_5529.webp" alt="" class="img-responsive">
 							<div class="teachars-info">
-								<h3>Mrs Rameshwari Zala</h3>
+								<h3>Dr. Rameshwari Zala</h3>
 								<span>Assistant Professor</span>
-								<p>M. Sc.</p>
+								<p>M. Sc. , PH.D.</p>
 								<hr style="margin:0px;">
 								<p>Pediatric Nursing, Statistics and Nursing Education</p>
 								<a href="#" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
@@ -1191,9 +1240,9 @@
 						<div class="teacher-body">
 							<img src="images/faculty_photo/Ms Hetal Shah.png" alt="" class="img-responsive">
 							<div class="teachars-info">
-								<h3>Ms Hetal Shah</h3>
+								<h3>Dr Hetal Shah</h3>
 								<span>Assistant Professor</span>
-								<p>M. Sc.</p>
+								<p>M. Sc., PH.D.</p>
 								<hr style="margin:0px;">
 								<p>Psychiatric Nursing, Statistics and Nursing Education</p>
 								<a href="https://vidwan.inflibnet.ac.in/profile/163832" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
@@ -1262,9 +1311,9 @@
 						<div class="teacher-body">
 							<img src="images/faculty_photo/Mr Jamin Chauhan.png" alt="" class="img-responsive">
 							<div class="teachars-info">
-								<h3>Mr Jamin Chauhan</h3>
+								<h3>Dr. Jamin Chauhan</h3>
 								<span>Assistant Professor</span>
-								<p>M. Sc.</p>
+								<p>M. Sc., PH.D.</p>
 								<hr style="margin:0px;">
 								<p>Psychiatric Nursing, Statistics and Nursing Education</p>
 								<a href="https://vidwan.inflibnet.ac.in/profile/162633" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
@@ -1312,6 +1361,8 @@
 							</div>
 						</div>
 					</div>
+
+					
 					
 					
 					<!--<div class="col-sm-6 col-md-3 team-single-info-02 item " >-->
@@ -1739,6 +1790,59 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-sm-6 col-md-3 team-single-info-02 item " >
+						<div class="teacher-body">
+							<img src="images/faculty_photo/SHILPA RS.jpg" alt="" class="img-responsive">
+							<div class="teachars-info">
+								<h3>Ms. Shilpa Rathwa</h3>
+								<span>Nursing Tutor</span>
+								<p>M. Sc.</p>
+								<hr style="margin:0px;">
+								<p>VENTURE PLANNING, COUNSELLING,OBSTETRICS MEDICINE  MANAGEMENT</p>
+									<a href="" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
+									<a href=""  title="binaljoshi.nur@charusat.ac.in"><i class="fa fa-envelope teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href="tel:+91 2697 265216"  title="+91 2697 265216"><i class="fa fa-phone teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href=""  title="Linkedin Link"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+									<a href="javascript:void(0);"  title="Web-Link"><i class="fa fa-globe" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 team-single-info-02 item " >
+						<div class="teacher-body">
+							<img src="images/faculty_photo/Bhavesh Bhoye.jpg" alt="" class="img-responsive">
+							<div class="teachars-info">
+								<h3>Mr. Bhavesh Bhoye</h3>
+								<span>Assistant Professor</span>
+								<p>M. Sc.</p>
+								<hr style="margin:0px;">
+								<p>Mental Health Nursing,Mindfulness</p>
+									<a href="" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
+									<a href=""  title="binaljoshi.nur@charusat.ac.in"><i class="fa fa-envelope teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href="tel:+91 2697 265216"  title="+91 2697 265216"><i class="fa fa-phone teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href=""  title="Linkedin Link"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+									<a href="javascript:void(0);"  title="Web-Link"><i class="fa fa-globe" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 team-single-info-02 item " >
+						<div class="teacher-body">
+							<img src="images/faculty_photo/Dr. suchi smita.jpg" alt="" class="img-responsive">
+							<div class="teachars-info">
+								<h3>Dr. Suchismita Bhowmik</h3>
+								<span>Assistant Professor</span>
+								<p>M. Sc.</p>
+								<hr style="margin:0px;">
+								<p>Health Nursing,Public Health</p>
+									<a href="" target="_blank"  title="profile"><i class="fa fa-user teacher-icon"></i></a>&nbsp;&nbsp;
+									<a href=""  title="binaljoshi.nur@charusat.ac.in"><i class="fa fa-envelope teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href="tel:+91 2697 265216"  title="+91 2697 265216"><i class="fa fa-phone teacher-icon"></i> </a>&nbsp;&nbsp;
+									<a href=""  title="Linkedin Link"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+									<a href="javascript:void(0);"  title="Web-Link"><i class="fa fa-globe" aria-hidden="true"></i> </a>&nbsp;&nbsp;
+							</div>
+						</div>
+					</div>
 					
 			
 					
@@ -1751,6 +1855,166 @@
 		<!-- ./ End Teachers Area section -->
 <!-- Student Parent Say Area section -->
 <!-- Student Parent Say Area section -->
+
+
+<section class="Courses-area home_version_03" id="facilities">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 section-header-box">
+                <div class="section-header">
+                    <h2>Facilities / Laboratories</h2>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row courses-r-margin-bottom">
+
+            <!-- LAB TEMPLATE START -->
+            <!-- Just duplicate this block and change the title + image paths -->
+
+            <!-- LAB 1 -->
+            <div class="col-sm-12 single-courses-box">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Advance skill Lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Advance skill Lab/lab1_1.jpg" alt="" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Advance skill Lab/lab1_2.jpg" alt="" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Advance skill Lab/lab1_3.jpg" alt="" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 2 -->
+            <div class="col-sm-12 single-courses-box">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Community Health Nursing Lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Community Health Nursing Lab/lab2_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Community Health Nursing Lab/lab2_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Community Health Nursing Lab/lab2_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 3 -->
+            <div class="col-sm-12 single-courses-box">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Day care center</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Day care center/lab3_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Day care center/lab3_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Day care center/lab3_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 4 -->
+            <div class="col-sm-12 single-courses-box" style="margin-top:10px;">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Nursing Foundation lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Nursing Foundation lab/lab4_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Nursing Foundation lab/lab4_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Nursing Foundation lab/lab4_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 5 -->
+            <div class="col-sm-12 single-courses-box" style="margin-top:10px;">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Obstetric and Gyanecology Lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Obstetric and Gyanecology Lab/lab5_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Obstetric and Gyanecology Lab/lab5_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Obstetric and Gyanecology Lab/lab5_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 6 -->
+            <div class="col-sm-12 single-courses-box" style="margin-top:10px;">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Pre Clinical Sciernce Lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Pre clinical sciernce Lab/lab6_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Pre clinical sciernce Lab/lab6_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Pre clinical sciernce Lab/lab6_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAB 7 -->
+            <div class="col-sm-12 single-courses-box" style="margin-top:10px;">
+                <div class="single-courses">
+                    <div class="courses-content-box">
+                        <div class="courses-content">
+
+                            <h3><a href="#">Research Lab and Computer Lab</a></h3>
+
+                            <div style="display:flex; gap:8px; margin-top:10px;">
+                                <img src="images/labs/Research Lab and Computer Lab/lab7_1.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Research Lab and Computer Lab/lab7_2.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                                <img src="images/labs/Research Lab and Computer Lab/lab7_3.jpg" style="width:33%; height:250px; object-fit:cover; border-radius:6px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
 <section class="stu-parent-say-area">
     <div class="overlay-bg">
         <div class="container">

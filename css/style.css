@@ -31,6 +31,29 @@
 ======================================*/
 	/* Variables */
 	/* Section subtitle */
+	/* Default navbar styling */
+
+/* Navbar links default */
+#mainNavbar .nav > li > a {
+    color: #ffffff;   /* default white */
+    transition: color 0.3s ease;
+}
+
+/* Sticky / Scrolled state */
+.navbar-scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+/* Navbar links when scrolled */
+.navbar-scrolled .nav > li > a {
+    color: #000000 !important;  /* black text when scrolled */
+}
+
+/* Highlight active menu */
+.navbar-scrolled .nav > li.active > a {
+    color: #007bff !important;   /* optional blue active link */
+}
 .section-subtitle {
     margin-top: 8px;
     font-size: 14px;
@@ -145,7 +168,12 @@
     }
 }
 
-
+.header-body {
+    position: sticky;
+	margin: 200px;
+   
+    z-index: 9999;
+}
 	body {
 	    font-family: "Open Sans", sans-serif;
 	    overflow-x: hidden;
@@ -357,8 +385,9 @@
 	    padding-right: 5px;
 	}
 	header .header-body {
-	    position: absolute;
+	    position: sticky;
 	    width: 100%;
+		height: 80%;
 	    /*=======[ Index Sticky Nav Style ]========*/
 	}
 	header .header-body .edu-navbar {
