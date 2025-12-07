@@ -1,68 +1,81 @@
-// MTIN Theme JS
-
+// Custom behaviour for MTIN site
 $(document).ready(function () {
 
-    // ===== Mobile Nav Toggle =====
-    $('#mtin-mobile-toggle').on('click', function () {
-        $('#mtin-mobile-nav').toggleClass('open');
-    });
-
-    // Close mobile nav on link click
-    $('#mtin-mobile-nav .nav-link').on('click', function () {
-        $('#mtin-mobile-nav').removeClass('open');
-    });
-
-    // ===== Smooth Scroll for nav links =====
-    $('a.nav-link').on('click', function (e) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
+    // ===== Smooth scroll for nav =====
+    $('a.mtin-nav-link').on('click', function (e) {
+        var target = $(this).attr('href');
+        if (target && target.charAt(0) === '#' && $(target).length) {
             e.preventDefault();
+
+            // close collapsed menu on mobile
+            $('.navbar-collapse.in').collapse('hide');
+
             $('html, body').animate({
-                scrollTop: target.offset().top - 80
+                scrollTop: $(target).offset().top - 80
             }, 600);
         }
     });
 
-    // ===== Recruiters Carousel =====
-    $('#recruiters-carousel').owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:   { items: 2 },
-            576: { items: 3 },
-            768: { items: 4 },
-            992: { items: 5 }
-        }
-    });
+    // ===== Highlight active menu on scroll =====
+    var sections = $('section[id], header[id]');
+    var navLinks = $('.mtin-nav-link');
 
-    // ===== Testimony Carousel =====
-    $('#testimony-carousel').owlCarousel({
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true,
-        items: 1,
-        smartSpeed: 700
-    });
-
-    // ===== Active nav link on scroll (simple version) =====
-    var sections = $('section[id]');
-    var navLinks = $('.nav-link');
-
-    $(window).on('scroll', function () {
-        var scrollPos = $(document).scrollTop() + 120;
-
+    function updateActiveNav() {
+        var scrollPos = $(window).scrollTop() + 90;
         sections.each(function () {
-            var curr = $(this);
-            if (curr.position().top <= scrollPos && curr.position().top + curr.height() > scrollPos) {
-                var id = curr.attr('id');
-                navLinks.removeClass('active');
-                $('.nav-link[href="#' + id + '"]').addClass('active');
+            var top = $(this).offset().top;
+            var bottom = top + $(this).outerHeight();
+            var id = $(this).attr('id');
+            if (scrollPos >= top && scrollPos <= bottom) {
+                navLinks.parent().removeClass('active');
+                navLinks.filter('[href="#' + id + '"]').parent().addClass('active');
             }
         });
-    });
+    }
+
+    $(window).on('scroll', updateActiveNav);
+    updateActiveNav();
+
+    // ===== Owl carousel: recruiters =====
+    if ($('#mtin-recruiters').length) {
+        $('#mtin-recruiters').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 2 },
+                480: { items: 3 },
+                768: { items: 4 },
+                992: { items: 5 }
+            }
+        });
+    }
+
+    // ===== Owl carousel: testimony =====
+    if ($('#mtin-testimony').length) {
+        $('#mtin-testimony').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            items: 1,
+            smartSpeed: 700
+        });
+    }
+
+    // ===== Reveal-on-scroll animation =====
+    function handleReveal() {
+        $('.reveal').each(function () {
+            var rect = this.getBoundingClientRect();
+            var winH = window.innerHeight || document.documentElement.clientHeight;
+            if (rect.top <= winH - 60) {
+                $(this).addClass('in-view');
+            }
+        });
+    }
+
+    $(window).on('scroll load', handleReveal);
 });
