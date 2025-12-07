@@ -7,26 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <meta name="description" content="Manikaka Topawala Institute of Nursing (MTIN), a constituent institute of CHARUSAT.">
-    <meta name="keywords" content="MTIN, Nursing, CHARUSAT, BSc Nursing, MSc Nursing, GNM, Gujarat">
+    <meta name="description" content="MTIN - Manikaka Topawala Institute of Nursing, a constituent institute of CHARUSAT.">
+    <meta name="keywords" content="MTIN, Nursing, BSc Nursing, MSc Nursing, GNM, CHARUSAT, Gujarat">
+    <meta name="robots" content="index,follow">
+    <meta name="google" content="translate" />
 
     <link rel="shortcut icon" href="images/mtin.png" type="image/x-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Core CSS -->
+    <!-- Vendor CSS -->
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/assets/font-awesome.min.css">
     <link rel="stylesheet" href="css/assets/owl.carousel.css">
     <link rel="stylesheet" href="css/assets/owl.theme.css">
+    <link rel="stylesheet" href="css/assets/magnific-popup.css">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="css/assets/revolution/settings.css">
+    <link rel="stylesheet" href="css/assets/revolution/layers.css">
+    <link rel="stylesheet" href="css/assets/revolution/navigation.css">
 
-    <!-- Custom Theme -->
-    <link rel="stylesheet" href="css/mtin-theme.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom Theme CSS -->
+    <link rel="stylesheet" href="css/mtin.css">
 </head>
 <body>
 
-<!-- ============== TOP BLUE STRIP ============== -->
+<!-- ===================== TOP SCROLLING NOTICE ===================== -->
+<div class="container mtin-marquee-container">
+    <marquee class="mtin-marquee" onmouseover="this.stop();" onmouseout="this.start();">
+        <a href="https://drive.google.com/file/d/1QEm723qOV1_1cgVz7pW5d5aFMCiVImjr/view?usp=sharing" target="_blank">
+            National Conference - MTIN 2025
+        </a>
+    </marquee>
+</div>
+
+<!-- ===================== BLUE TOP STRIP LIKE CHARUSAT ===================== -->
 <div class="mtin-topbar">
     <div class="container">
         <div class="mtin-topbar-inner">
@@ -46,266 +62,286 @@
     </div>
 </div>
 
-<!-- ============== MAIN NAVBAR (WHITE BAR) ============== -->
-<nav class="navbar navbar-default mtin-navbar">
-    <div class="container">
+<!-- ===================== MAIN HEADER + MENU (RESPONSIVE) ===================== -->
+<header class="mtin-main-header">
+    <nav class="navbar navbar-default mtin-navbar">
+        <div class="container">
 
-        <!-- Brand + toggle for mobile -->
-        <div class="navbar-header">
-            <button type="button"
-                    class="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target="#mtin-main-menu"
-                    aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+            <!-- Brand + Toggle -->
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#mtin-main-menu"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            <a class="navbar-brand mtin-brand" href="#home">
-                <!-- Update logo path -->
-                <img src="images/charusat-logo.png" alt="CHARUSAT" class="mtin-logo-img">
-                <span class="mtin-brand-text">
-                    <span class="mtin-brand-univ">CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY</span>
-                    <span class="mtin-brand-inst">Manikaka Topawala Institute of Nursing (MTIN)</span>
-                </span>
-            </a>
+                <a class="navbar-brand mtin-brand" href="#home">
+                    <!-- Use CHARUSAT-style logo here -->
+                    <img src="images/charusat-logo.png" alt="CHARUSAT" class="mtin-logo-img">
+                    <span class="mtin-brand-text">
+                        <span class="mtin-brand-univ">CHAROTAR UNIVERSITY OF SCIENCE AND TECHNOLOGY</span>
+                        <span class="mtin-brand-inst">Manikaka Topawala Institute of Nursing (MTIN)</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mtin-main-menu">
+                <ul class="nav navbar-nav navbar-right mtin-menu">
+                    <li class="active"><a href="#home" class="mtin-nav-link">Home</a></li>
+                    <li><a href="#programs" class="mtin-nav-link">Programmes</a></li>
+                    <li><a href="#scalars" class="mtin-nav-link">Scalars</a></li>
+                    <li><a href="#facilities" class="mtin-nav-link">Facilities</a></li>
+                    <li><a href="#faculty" class="mtin-nav-link">Faculty</a></li>
+                    <li><a href="#testimony" class="mtin-nav-link">Testimony</a></li>
+                    <li><a href="#contact" class="mtin-nav-link">Contact</a></li>
+                    <li class="mtin-menu-cta">
+                        <a href="https://admission.charusat.ac.in/Registration" target="_blank" class="mtin-btn-orange">
+                            Enquire Now – Admission 2025
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
+    </nav>
+</header>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="mtin-main-menu">
-            <ul class="nav navbar-nav navbar-right mtin-menu">
-                <li class="active"><a href="#home" class="mtin-nav-link">Home</a></li>
-                <li><a href="#programs" class="mtin-nav-link">Programmes</a></li>
-                <li><a href="#scalars" class="mtin-nav-link">Scalars</a></li>
-                <li><a href="#facilities" class="mtin-nav-link">Facilities</a></li>
-                <li><a href="#faculty" class="mtin-nav-link">Faculty</a></li>
-                <li><a href="#testimony" class="mtin-nav-link">Testimony</a></li>
-                <li><a href="#contact" class="mtin-nav-link">Contact</a></li>
-                <li class="mtin-menu-cta">
-                    <a href="https://admission.charusat.ac.in/Registration" target="_blank" class="mtin-btn-orange">
-                        Enquire Now – Admission 2025
-                    </a>
+<!-- ===================== HERO SLIDER (REVOLUTION) ===================== -->
+<section id="home" class="mtin-hero-slider">
+    <div class="rev_slider_wrapper">
+        <div id="rev_slider_1" class="rev_slider" style="display:none">
+            <ul>
+                <!-- SLIDE 1 -->
+                <li data-transition="boxfade" data-title="Welcome">
+                    <div class="slider-overlay"></div>
+                    <img src="images/mtin_1.jpg" alt="MTIN" class="rev-slidebg" />
+                    <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
+                         data-x="left" data-hoffset="0"
+                         data-y="center" data-voffset="50"
+                         data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"x:[175%];opacity:0;","mask":"x:[-100%];","to":"o:1;","ease":"Power3.easeOut"}]'
+                         style="z-index:6;font-size:52px;color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;">
+                        Welcome<br>To Bright Future
+                    </div>
+
+                    <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-p"
+                         data-x="left" data-hoffset="0"
+                         data-y="center" data-voffset="-80"
+                         data-frames='[{"delay":500,"speed":1200,"frame":"0","from":"x:[-175%];opacity:0;","mask":"x:[100%];","to":"o:1;","ease":"Power3.easeOut"}]'
+                         style="z-index:6;line-height:24px;font-size:16px;color:#fff;font-family:'Open Sans',sans-serif;">
+                        Manikaka Topawala Institute of Nursing
+                    </div>
+                </li>
+
+                <!-- SLIDE 2 -->
+                <li data-transition="random" data-title="Empowering Youth">
+                    <div class="slider-overlay"></div>
+                    <img src="images/mtin_2.jpg" alt="MTIN" class="rev-slidebg" />
+                    <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
+                         data-x="left" data-hoffset="0"
+                         data-y="center" data-voffset="50"
+                         data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"x:[175%];opacity:0;","mask":"x:[-100%];","to":"o:1;","ease":"Power3.easeOut"}]'
+                         style="z-index:6;font-size:52px;color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;">
+                        Empowering Youth<br>Towards Excellence
+                    </div>
+
+                    <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p"
+                         data-x="left" data-hoffset="0"
+                         data-y="center" data-voffset="-80"
+                         data-frames='[{"delay":300,"speed":1200,"frame":"0","from":"y:top;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"}]'
+                         style="z-index:6;line-height:24px;font-size:16px;color:#fff;font-family:'Open Sans',sans-serif;">
+                        Manikaka Topawala Institute of Nursing
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
+</section>
 
-<!-- ============== PAGE TITLE (ORANGE BAND) ============== -->
-<header id="home" class="mtin-page-header">
-    <div class="container">
-        <div class="mtin-page-title reveal">
-            <h1>Nursing Education @ MTIN</h1>
-        </div>
-        <p class="mtin-page-subtitle reveal">
-            At CHARUSAT, we believe in holistic development of our students through
-            strong clinical exposure, research culture and values-based learning.
-        </p>
-    </div>
-</header>
-
-<!-- ============== WELCOME + VISION / MISSION ============== -->
+<!-- ===================== WELCOME + VISION/MISSION ===================== -->
 <section class="mtin-section mtin-section-soft">
     <div class="container">
         <div class="row">
             <div class="col-md-7 reveal">
                 <h2 class="mtin-section-title">Welcome to MTIN</h2>
                 <p class="mtin-section-text">
-                    Manikaka Topawala Institute of Nursing (formerly Charotar Institute of Nursing) was
-                    established in 2009 by CHARUSAT. The institute offers B.Sc. Nursing, GNM, Post Basic
-                    B.Sc. and M.Sc. Nursing programmes in various specialties along with Ph.D. in Nursing.
-                    MTIN aims to prepare competent, compassionate and ethical nursing professionals who can
-                    serve the healthcare needs of the society at regional, national and global levels.
+                    CHARUSAT established Manikaka Topawala Institute of Nursing (formerly Charotar Institute of Nursing) in 2009 with an intake of 40 students, enhanced to 60 in 2012. GNM programme started in 2011, followed by M.Sc. Nursing in 2014 in five specialties – Medical Surgical Nursing, Child Health Nursing, Mental Health Nursing, Obstetrics &amp; Gynecology Nursing, and Community Health Nursing.
                 </p>
                 <p class="mtin-section-text">
-                    Through strong hospital tie-ups, community postings and a vibrant research culture,
-                    students receive extensive clinical exposure and mentoring from experienced faculty.
+                    To foster research, the Ph.D. programme commenced in 2011. The institute aims to meet the demand for skilled nurses across hospitals and institutes at state, national and global levels.
                 </p>
             </div>
+
             <div class="col-md-5 reveal">
                 <div class="mtin-vm-wrapper">
                     <div class="mtin-vm-card mtin-vm-vision">
                         <h3>Vision</h3>
-                        <p>
-                            To become a premier institute in the field of Nursing Education,
-                            Practice and Research.
-                        </p>
+                        <p>To become a premier institute in the field of Nursing Education, Practice &amp; Research.</p>
                     </div>
                     <div class="mtin-vm-card mtin-vm-mission">
                         <h3>Mission</h3>
-                        <p>
-                            To prepare competent, knowledgeable and compassionate nurses having leadership
-                            quality and an inclination to serve society.
-                        </p>
+                        <p>To prepare competent, knowledgeable and compassionate nurses with leadership qualities and an inclination to serve the society.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- why mtin cards -->
+        <!-- three key features -->
         <div class="row mt-40">
             <div class="col-sm-4 reveal">
                 <div class="mtin-pill-card">
-                    <div class="mtin-pill-icon"><i class="fa fa-stethoscope"></i></div>
-                    <h4>Clinical Excellence</h4>
-                    <p>Hands-on training at multi-speciality hospitals and community health centres.</p>
+                    <div class="mtin-pill-icon"><i class="fa fa-lightbulb-o"></i></div>
+                    <h4>Project Based Learning</h4>
+                    <p>Application-oriented learning through projects and clinical case discussions.</p>
                 </div>
             </div>
             <div class="col-sm-4 reveal">
                 <div class="mtin-pill-card">
                     <div class="mtin-pill-icon"><i class="fa fa-flask"></i></div>
-                    <h4>Research Culture</h4>
-                    <p>PG &amp; Ph.D. programmes with focus on evidence-based nursing practice.</p>
+                    <h4>State-of-the-Art Research Facilities</h4>
+                    <p>Modern laboratories and mentoring for UG, PG and Doctoral research.</p>
                 </div>
             </div>
             <div class="col-sm-4 reveal">
                 <div class="mtin-pill-card">
                     <div class="mtin-pill-icon"><i class="fa fa-users"></i></div>
-                    <h4>Holistic Campus Life</h4>
-                    <p>Clubs, sports and extension activities at the lush green CHARUSAT campus.</p>
+                    <h4>Holistic Development</h4>
+                    <p>Co-curricular, extension and community activities for all-round growth.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============== PROGRAMMES ============== -->
+<!-- ===================== PROGRAMMES ===================== -->
 <section id="programs" class="mtin-section">
     <div class="container">
         <div class="mtin-section-header reveal">
             <h2 class="mtin-section-title">Programmes Offered</h2>
-            <p class="mtin-section-subtitle">
-                All programmes are duly approved by the Indian Nursing Council and Gujarat Nursing Council.
-            </p>
+            <p class="mtin-section-subtitle">All programmes are duly approved by the Indian Nursing Council and Gujarat Nursing Council.</p>
         </div>
 
         <div class="row mt-30">
-            <!-- One card per programme -->
+            <!-- BSc Nursing -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
-                    <h3>B.Sc. Nursing</h3>
+                    <h3>Bachelor of Science (Nursing)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 4 Years</li>
+                        <li><strong>Course Duration:</strong> 04 Years</li>
                         <li><strong>Intake:</strong> 80 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,65,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/bsc_gnm.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/bsc_gnm.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- MSc Community -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>M.Sc. Nursing (Community Health)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
-                        <li><strong>Intake:</strong> 4 Seats</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
+                        <li><strong>Intake:</strong> 04 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,77,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- MSc Mental Health -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>M.Sc. Nursing (Mental Health)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
-                        <li><strong>Intake:</strong> 4 Seats</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
+                        <li><strong>Intake:</strong> 04 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,77,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- MSc OBG -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>M.Sc. Nursing (Obstetrics &amp; Gynecology)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
-                        <li><strong>Intake:</strong> 4 Seats</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
+                        <li><strong>Intake:</strong> 04 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,77,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- MSc Child Health -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>M.Sc. Nursing (Child Health)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
-                        <li><strong>Intake:</strong> 4 Seats</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
+                        <li><strong>Intake:</strong> 04 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,77,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- MSc Medical Surgical -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>M.Sc. Nursing (Medical Surgical)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
-                        <li><strong>Intake:</strong> 4 Seats</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
+                        <li><strong>Intake:</strong> 04 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,77,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/msc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- GNM -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
-                    <h3>GNM</h3>
+                    <h3>General Nursing &amp; Midwifery (GNM)</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 3 Years</li>
+                        <li><strong>Course Duration:</strong> 03 Years</li>
                         <li><strong>Intake:</strong> 40 Seats</li>
                         <li><strong>Fees:</strong> ₹ 1,24,000/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/bsc_gnm.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/bsc_gnm.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
             </div>
 
+            <!-- Post Basic BSc -->
             <div class="col-md-4 col-sm-6 reveal">
                 <div class="mtin-program-card">
                     <h3>Post Basic B.Sc. Nursing</h3>
                     <ul>
-                        <li><strong>Duration:</strong> 2 Years</li>
+                        <li><strong>Course Duration:</strong> 02 Years</li>
                         <li><strong>Intake:</strong> 20 Seats</li>
                         <li><strong>Fees:</strong> ₹ 93,500/-</li>
                     </ul>
-                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/pcbsc.pdf"
-                       target="_blank"
-                       class="mtin-link-download">
+                    <a href="https://charusat.ac.in/Downloads/Brochure/MTIN/pcbsc.pdf" target="_blank" class="mtin-link-download">
                         <i class="fa fa-download"></i> Brochure
                     </a>
                 </div>
@@ -314,7 +350,7 @@
     </div>
 </section>
 
-<!-- ============== SCALARS ============== -->
+<!-- ===================== SCALARS ===================== -->
 <section id="scalars" class="mtin-section mtin-section-blue">
     <div class="container">
         <div class="mtin-section-header reveal">
@@ -347,7 +383,7 @@
                 <div class="mtin-scalar-card">
                     <i class="fa fa-graduation-cap"></i>
                     <div class="mtin-scalar-number">127</div>
-                    <div class="mtin-scalar-label">Higher Studies</div>
+                    <div class="mtin-scalar-label">Higher Studies Students</div>
                 </div>
             </div>
         </div>
@@ -357,7 +393,7 @@
                 <div class="mtin-scalar-card">
                     <i class="fa fa-black-tie"></i>
                     <div class="mtin-scalar-number">20</div>
-                    <div class="mtin-scalar-label">Hospital Tie-ups</div>
+                    <div class="mtin-scalar-label">Academic Tie-up with Hospitals</div>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-3 reveal">
@@ -385,80 +421,80 @@
     </div>
 </section>
 
-<!-- ============== FACILITIES / LABS ============== -->
+<!-- ===================== FACILITIES / LABS ===================== -->
 <section id="facilities" class="mtin-section mtin-section-soft">
     <div class="container">
         <div class="mtin-section-header reveal">
             <h2 class="mtin-section-title">Facilities / Laboratories</h2>
         </div>
 
-        <!-- One block per lab (3 images each) -->
+        <!-- Each lab: 3 images responsive -->
         <div class="mtin-lab-block reveal">
             <h3 class="mtin-lab-title">Advance Skill Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_1.JPG" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_2.JPG" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_3.JPG" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_1.JPG" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_2.JPG" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Advance skill Lab/lab1_3.JPG" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
             <h3 class="mtin-lab-title">Community Health Nursing Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_1.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_2.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_3.jpg" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_1.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_2.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Community Health Nursing Lab/lab2_3.jpg" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
             <h3 class="mtin-lab-title">Day Care Centre</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_1.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_2.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_3.jpg" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_1.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_2.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Day care center/lab3_3.jpg" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
             <h3 class="mtin-lab-title">Nursing Foundation Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_1.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_2.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_3.jpg" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_1.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_2.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Nursing Foundation lab/lab4_3.jpg" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
             <h3 class="mtin-lab-title">Obstetric &amp; Gynecology Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_1.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_2.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_3.jpg" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_1.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_2.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Obstetric and Gyanecology Lab/lab5_3.jpg" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
-            <h3 class="mtin-lab-title">Pre-Clinical Science Lab</h3>
+            <h3 class="mtin-lab-title">Pre Clinical Science Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_1.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_2.jpg" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_3.jpg" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_1.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_2.jpg" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Pre clinical sciernce Lab/lab6_3.jpg" class="mtin-lab-img"></div>
             </div>
         </div>
 
         <div class="mtin-lab-block reveal">
-            <h3 class="mtin-lab-title">Research &amp; Computer Lab</h3>
+            <h3 class="mtin-lab-title">Research Lab and Computer Lab</h3>
             <div class="row">
-                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_1.JPG" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_2.JPG" class="mtin-lab-img" alt=""></div>
-                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_3.JPG" class="mtin-lab-img" alt=""></div>
+                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_1.JPG" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_2.JPG" class="mtin-lab-img"></div>
+                <div class="col-sm-4"><img src="images/labs/Research Lab and Computer Lab/lab7_3.JPG" class="mtin-lab-img"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============== MAJOR RECRUITERS (CAROUSEL) ============== -->
+<!-- ===================== MAJOR RECRUITERS (OWL CAROUSEL) ===================== -->
 <section class="mtin-section">
     <div class="container">
         <div class="mtin-section-header reveal">
@@ -481,7 +517,7 @@
     </div>
 </section>
 
-<!-- ============== FACULTY (PHOTO CARDS) ============== -->
+<!-- ===================== FACULTY (PHOTO CARDS) ===================== -->
 <section id="faculty" class="mtin-section mtin-section-soft">
     <div class="container">
         <div class="mtin-section-header reveal">
@@ -489,14 +525,14 @@
         </div>
 
         <div class="row mt-30">
-            <!-- Repeat this pattern for all faculty members -->
+            <!-- Dr Anil Sharma -->
             <div class="col-sm-6 col-md-3 reveal">
                 <div class="mtin-faculty-card">
                     <div class="mtin-faculty-photo">
                         <img src="images/faculty_photo/AnilSharma.jpg" alt="Dr. Anil Sharma">
                     </div>
                     <h3>Dr. Anil Sharma</h3>
-                    <p class="mtin-faculty-role">Professor &amp; Principal</p>
+                    <p class="mtin-faculty-role">Professor and Principal</p>
                     <p class="mtin-faculty-qual">Ph.D.</p>
                     <p class="mtin-faculty-area">Medical Surgical Nursing</p>
                     <div class="mtin-faculty-links">
@@ -507,6 +543,7 @@
                 </div>
             </div>
 
+            <!-- Dr Vipin Vageriya -->
             <div class="col-sm-6 col-md-3 reveal">
                 <div class="mtin-faculty-card">
                     <div class="mtin-faculty-photo">
@@ -515,7 +552,7 @@
                     <h3>Dr. Vipin Vageriya</h3>
                     <p class="mtin-faculty-role">Assistant Professor</p>
                     <p class="mtin-faculty-qual">M.Sc.</p>
-                    <p class="mtin-faculty-area">Pediatric Nursing, Statistics &amp; Nursing Education</p>
+                    <p class="mtin-faculty-area">Pediatric Nursing, Statistics and Nursing Education</p>
                     <div class="mtin-faculty-links">
                         <a href="mailto:vipinvageriya.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
                         <a href="tel:+912697265204"><i class="fa fa-phone"></i></a>
@@ -523,6 +560,7 @@
                 </div>
             </div>
 
+            <!-- Dr Deepak -->
             <div class="col-sm-6 col-md-3 reveal">
                 <div class="mtin-faculty-card">
                     <div class="mtin-faculty-photo">
@@ -531,7 +569,7 @@
                     <h3>Dr. Deepak Krishnamurthy</h3>
                     <p class="mtin-faculty-role">Associate Professor</p>
                     <p class="mtin-faculty-qual">M.Sc., Ph.D.</p>
-                    <p class="mtin-faculty-area">Psychiatric Nursing, Statistics &amp; Nursing Education</p>
+                    <p class="mtin-faculty-area">Psychiatric Nursing, Statistics and Nursing Education</p>
                     <div class="mtin-faculty-links">
                         <a href="mailto:deepakk.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
                         <a href="tel:+912697265204"><i class="fa fa-phone"></i></a>
@@ -539,6 +577,7 @@
                 </div>
             </div>
 
+            <!-- Dr Anjali Tiwari -->
             <div class="col-sm-6 col-md-3 reveal">
                 <div class="mtin-faculty-card">
                     <div class="mtin-faculty-photo">
@@ -547,20 +586,182 @@
                     <h3>Dr. Anjali Tiwari</h3>
                     <p class="mtin-faculty-role">Associate Professor</p>
                     <p class="mtin-faculty-qual">Ph.D.</p>
-                    <p class="mtin-faculty-area">Obstetric Nursing, Statistics &amp; Nursing Education</p>
+                    <p class="mtin-faculty-area">Obstetric Nursing, Statistics and Nursing Education</p>
                     <div class="mtin-faculty-links">
                         <a href="mailto:anjalitiwari.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
                         <a href="tel:+912697265202"><i class="fa fa-phone"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Add remaining faculty using same card structure -->
+        <!-- next row -->
+        <div class="row">
+            <!-- Dr Rameshwari -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Rameshwari_5529.webp" alt="Dr. Rameshwari Zala">
+                    </div>
+                    <h3>Dr. Rameshwari Zala</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc., Ph.D.</p>
+                    <p class="mtin-faculty-area">Pediatric Nursing, Statistics and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:rameshwarisolanki.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265364"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mr Arpan -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Arpan-Pandya.webp" alt="Mr. Arpan Pandya">
+                    </div>
+                    <h3>Mr. Arpan Pandya</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc.</p>
+                    <p class="mtin-faculty-area">Pediatric Nursing, Statistics and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:arpanpandya.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265364"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dr Hetal -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Ms Hetal Shah.png" alt="Dr. Hetal Shah">
+                    </div>
+                    <h3>Dr. Hetal Shah</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc., Ph.D.</p>
+                    <p class="mtin-faculty-area">Psychiatric Nursing, Statistics and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:hetalshah.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265365"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dr Sapna -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Ms. Sapna Patel.png" alt="Dr. Sapna Patel">
+                    </div>
+                    <h3>Dr. Sapna Patel</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">Ph.D.</p>
+                    <p class="mtin-faculty-area">Obstetric Nursing, Statistics and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:sapnapatel.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265204"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third row -->
+        <div class="row">
+            <!-- Mr Chirag -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Mr Chirag Jain.png" alt="Mr. Chirag Jain">
+                    </div>
+                    <h3>Mr. Chirag Jain</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc.</p>
+                    <p class="mtin-faculty-area">Medical Surgical Nursing</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:chiragjain.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265215"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mr Divya -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Mr Divya Jain.png" alt="Mr. Divya Jain">
+                    </div>
+                    <h3>Mr. Divya Jain</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc.</p>
+                    <p class="mtin-faculty-area">Medical Surgical Nursing</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:divyajain.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265219"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dr Jamin -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Mr Jamin Chauhan.png" alt="Dr. Jamin Chauhan">
+                    </div>
+                    <h3>Dr. Jamin Chauhan</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc., Ph.D.</p>
+                    <p class="mtin-faculty-area">Psychiatric Nursing, Statistics and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:jaminchauhan.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265365"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mr Anilkumar -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Anil_Patidar.webp" alt="Mr. Anilkumar Patidar">
+                    </div>
+                    <h3>Mr. Anilkumar Patidar</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc.</p>
+                    <p class="mtin-faculty-area">Medical Surgical Nursing</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:anilpatidar.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265367"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth row -->
+        <div class="row">
+            <!-- Ms Binal -->
+            <div class="col-sm-6 col-md-3 reveal">
+                <div class="mtin-faculty-card">
+                    <div class="mtin-faculty-photo">
+                        <img src="images/faculty_photo/Binal Joshi.png" alt="Ms. Binal Joshi">
+                    </div>
+                    <h3>Ms. Binal Joshi</h3>
+                    <p class="mtin-faculty-role">Assistant Professor</p>
+                    <p class="mtin-faculty-qual">M.Sc.</p>
+                    <p class="mtin-faculty-area">Child Health Nursing and Nursing Education</p>
+                    <div class="mtin-faculty-links">
+                        <a href="mailto:binaljoshi.nur@charusat.ac.in"><i class="fa fa-envelope"></i></a>
+                        <a href="tel:+912697265216"><i class="fa fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can continue adding rest of faculty here in same pattern -->
         </div>
     </div>
 </section>
 
-<!-- ============== TESTIMONY (CAROUSEL) ============== -->
+<!-- ===================== TESTIMONY (OWN SECTION) ===================== -->
 <section id="testimony" class="mtin-section mtin-section-blue-dark">
     <div class="container">
         <div class="mtin-section-header reveal">
@@ -571,17 +772,14 @@
         </div>
 
         <div id="mtin-testimony" class="owl-carousel mtin-testimony-carousel reveal">
+            <!-- 1 -->
             <div class="mtin-testimony-card">
                 <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
                 <p>
-                    With a blend of brilliant faculty members, excellent infrastructure and a
-                    sound learning ambience, MTIN has successfully produced some of the finest
-                    minds around.
+                    With a blend of brilliant faculty members, excellent infrastructure, its unique course curricula and a sound learning ambience, MTIN has successfully produced some of the finest minds around.
                 </p>
                 <ul class="mtin-rating">
-                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
                 </ul>
                 <div class="mtin-testimony-user">
                     <img src="images/testimony/Mr. Robinson.png" alt="Mr. Robinson">
@@ -592,16 +790,14 @@
                 </div>
             </div>
 
+            <!-- 2 -->
             <div class="mtin-testimony-card">
                 <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
                 <p>
-                    In my post-graduation journey, our Principal and faculty molded me positively
-                    to become a successful student as well as a good teacher.
+                    MTIN is a life-changing platform for me. In my post-graduation journey, our Principal Sir and all faculty members molded me positively to become a successful student and a good teacher.
                 </p>
                 <ul class="mtin-rating">
-                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
                 </ul>
                 <div class="mtin-testimony-user">
                     <img src="images/testimony/PriyankaGurav.jpg" alt="Ms. Priyanka Gurav">
@@ -612,25 +808,93 @@
                 </div>
             </div>
 
-            <!-- Add other testimonies similarly -->
+            <!-- 3 -->
+            <div class="mtin-testimony-card">
+                <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>
+                    I enjoyed my student life with classmates in a nature-rich environment. The instructor system at CHARUSAT and caring teachers at MTIN made learning interactive and meaningful.
+                </p>
+                <ul class="mtin-rating">
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+                </ul>
+                <div class="mtin-testimony-user">
+                    <img src="images/testimony/NAZNEENVOHRA.jpg" alt="Ms. Nazneen Vohra">
+                    <div>
+                        <h3>Ms. Nazneen Vohra</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="mtin-testimony-card">
+                <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>
+                    The hours spent in the clinical lab preparing for practical exams truly made a world of difference when I started my position as a staff nurse on the intermediate care unit.
+                </p>
+                <ul class="mtin-rating">
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+                </ul>
+                <div class="mtin-testimony-user">
+                    <img src="images/testimony/Ms. Swati Jadav.png" alt="Ms. Swati Jadav">
+                    <div>
+                        <h3>Ms. Swati Jadav</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="mtin-testimony-card">
+                <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>
+                    I was challenged and learned something new with every patient experience. I was introduced to a variety of nursing fields which helped me choose my career path after graduation.
+                </p>
+                <ul class="mtin-rating">
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+                </ul>
+                <div class="mtin-testimony-user">
+                    <img src="images/testimony/Ms. Dhara Patel.png" alt="Ms. Dhara Patel">
+                    <div>
+                        <h3>Ms. Dhara Patel</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="mtin-testimony-card">
+                <div class="mtin-quote-icon"><i class="fa fa-quote-left"></i></div>
+                <p>
+                    I can securely say that the staff and professors truly care about each student and work very hard to ensure that everyone has every chance to succeed.
+                </p>
+                <ul class="mtin-rating">
+                    <li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+                </ul>
+                <div class="mtin-testimony-user">
+                    <img src="images/testimony/Ms. Smruti.png" alt="Ms. Smruti">
+                    <div>
+                        <h3>Ms. Smruti</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ============== VIDEO BANNER ============== -->
+<!-- ===================== VIDEO SECTION (SEPARATE) ===================== -->
 <section class="mtin-video-banner">
     <div class="mtin-video-overlay"></div>
     <div class="container">
-        <a href="https://www.youtube.com/embed/JVcSuvkcHDA?start=279&autoplay=1"
-           target="_blank"
-           class="mtin-video-play">
+        <a href="https://www.youtube.com/embed/JVcSuvkcHDA?start=279&autoplay=1" target="_blank" class="mtin-video-play">
             <i class="fa fa-play"></i>
         </a>
-        <h2>Take a Virtual Tour of MTIN</h2>
+        <h2>Take a Tour of MTIN</h2>
     </div>
 </section>
 
-<!-- ============== CONTACT ============== -->
+<!-- ===================== CONTACT ===================== -->
 <section id="contact" class="mtin-section">
     <div class="container">
         <div class="mtin-section-header reveal">
@@ -657,7 +921,7 @@
                 <div class="mtin-contact-card">
                     <i class="fa fa-map-marker"></i>
                     <h4>Location</h4>
-                    <p>Off. Nadiad–Petlad Highway, Changa-388421,<br> Anand, Gujarat, India</p>
+                    <p>Off. Nadiad-Petlad Highway, Changa-388421,<br>Anand, Gujarat, India</p>
                 </div>
             </div>
         </div>
@@ -670,18 +934,37 @@
     </div>
 </section>
 
-<!-- ============== FOOTER ============== -->
+<!-- ===================== FOOTER ===================== -->
 <footer class="mtin-footer">
     <div class="container">
         <p>© MTIN – <a href="https://www.charusat.ac.in" target="_blank">CHARUSAT</a> | All rights reserved</p>
     </div>
 </footer>
 
-<!-- ============== SCRIPTS ============== -->
+<!-- ===================== SCRIPTS ===================== -->
 <script src="js/vendor/jquery-1.12.4.min.js"></script>
 <script src="js/assets/bootstrap.min.js"></script>
 <script src="js/assets/owl.carousel.min.js"></script>
+<script src="js/assets/jquery.magnific-popup.min.js"></script>
+<script src="js/assets/jquery.sticky.js"></script>
+<script src="js/assets/jquery.counterup.min.js"></script>
+<script src="js/assets/waypoints.min.js"></script>
 
-<script src="js/mtin-theme.js"></script>
+<!-- Revolution Slider JS -->
+<script src="js/assets/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="js/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="js/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+
+<!-- Custom Theme JS -->
+<script src="js/mtin.js"></script>
+
 </body>
 </html>

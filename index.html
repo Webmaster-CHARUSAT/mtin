@@ -56,17 +56,20 @@
 #mainNavbar .nav > li > a {
     color: #ffffff;   /* default white */
     transition: color 0.3s ease;
+	margin-top:0px;
 }
 
 /* Sticky / Scrolled state */
 .navbar-scrolled {
     background: #ffffff !important;
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+	margin:0px;
 }
 
 /* Navbar links when scrolled */
 .navbar-scrolled .nav > li > a {
     color: #000000 !important;  /* black text when scrolled */
+	margin:0px;
 }
 
 /* Highlight active menu */
@@ -77,7 +80,7 @@
 	.header-body {
     position: sticky;
     top: 0;
-    z-index: 9999;
+	background:#292929;
 }
 		.btn {
 			background-color: DodgerBlue;
@@ -359,7 +362,7 @@
 	<!-- modal IQAC End-->
 	
 	<header id="header">
-		<div class="header-top navbar-fixed-top">
+		<div class="header-top">
 			<div class="container">
 			   <div class="row">
 				  <div class="col-sm-6 col-xs-12 header-top-left">
@@ -383,7 +386,7 @@
 		</div>
 
 		<div class="header-body">
-			<nav class="navbar edu-navbar navbar-fixed-top  " id="mainNavbar">
+			<nav class="navbar edu-navbar " id="mainNavbar">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -468,7 +471,7 @@
 
 		<!--==================Slider===================-->
 
-		<div class="rev_slider_wrapper" style="padding-top:0px;">
+		<div class="rev_slider_wrapper" style="padding-top:-100px;">
 			<div id="rev_slider_1" class="rev_slider" style="display:none">
             	<ul>
                     <li data-transition="boxfade" data-title="Slide Title" data-param1="Additional Text" data-thumb="images/MTIN_images/MTIN_1.jpg">

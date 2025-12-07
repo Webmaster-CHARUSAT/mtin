@@ -1,13 +1,11 @@
-// Custom behaviour for MTIN site
 $(document).ready(function () {
 
-    // ===== Smooth scroll for nav =====
+    /* ========= Smooth Scroll for Menu ========= */
     $('a.mtin-nav-link').on('click', function (e) {
         var target = $(this).attr('href');
         if (target && target.charAt(0) === '#' && $(target).length) {
             e.preventDefault();
-
-            // close collapsed menu on mobile
+            // close menu in mobile
             $('.navbar-collapse.in').collapse('hide');
 
             $('html, body').animate({
@@ -16,27 +14,26 @@ $(document).ready(function () {
         }
     });
 
-    // ===== Highlight active menu on scroll =====
+    /* ========= Highlight Active Menu on Scroll ========= */
     var sections = $('section[id], header[id]');
     var navLinks = $('.mtin-nav-link');
 
     function updateActiveNav() {
         var scrollPos = $(window).scrollTop() + 90;
         sections.each(function () {
-            var top = $(this).offset().top;
-            var bottom = top + $(this).outerHeight();
+            var t = $(this).offset().top;
+            var b = t + $(this).outerHeight();
             var id = $(this).attr('id');
-            if (scrollPos >= top && scrollPos <= bottom) {
+            if (scrollPos >= t && scrollPos <= b) {
                 navLinks.parent().removeClass('active');
                 navLinks.filter('[href="#' + id + '"]').parent().addClass('active');
             }
         });
     }
-
     $(window).on('scroll', updateActiveNav);
     updateActiveNav();
 
-    // ===== Owl carousel: recruiters =====
+    /* ========= Owl Carousel: Recruiters ========= */
     if ($('#mtin-recruiters').length) {
         $('#mtin-recruiters').owlCarousel({
             loop: true,
@@ -45,7 +42,7 @@ $(document).ready(function () {
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
             responsive: {
-                0: { items: 2 },
+                0:   { items: 2 },
                 480: { items: 3 },
                 768: { items: 4 },
                 992: { items: 5 }
@@ -53,7 +50,7 @@ $(document).ready(function () {
         });
     }
 
-    // ===== Owl carousel: testimony =====
+    /* ========= Owl Carousel: Testimony ========= */
     if ($('#mtin-testimony').length) {
         $('#mtin-testimony').owlCarousel({
             loop: true,
@@ -66,7 +63,7 @@ $(document).ready(function () {
         });
     }
 
-    // ===== Reveal-on-scroll animation =====
+    /* ========= Reveal-on-scroll animation ========= */
     function handleReveal() {
         $('.reveal').each(function () {
             var rect = this.getBoundingClientRect();
@@ -76,6 +73,29 @@ $(document).ready(function () {
             }
         });
     }
-
     $(window).on('scroll load', handleReveal);
+    handleReveal();
+
+    /* ========= Revolution Slider Init ========= */
+    if ($("#rev_slider_1").revolution !== undefined) {
+        $("#rev_slider_1").show().revolution({
+            sliderType: "standard",
+            jsFileLocation: "js/assets/revolution/",
+            sliderLayout: "fullscreen",
+            delay: 7000,
+            navigation: {
+                arrows: { enable: true, style: "uranus" },
+                bullets: { enable: false }
+            },
+            responsiveLevels: [1200, 992, 768, 480],
+            gridwidth: [1200, 992, 768, 480],
+            gridheight: [650, 550, 480, 420],
+            parallax: {
+                type: "scroll",
+                origo: "slidercenter",
+                speed: 400
+            }
+        });
+    }
+
 });

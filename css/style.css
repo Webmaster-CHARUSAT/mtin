@@ -169,8 +169,7 @@
 }
 
 .header-body {
-    position: sticky;
-	margin: 200px;
+	margin: 0px;
    
     z-index: 9999;
 }
